@@ -6,9 +6,9 @@ import Charts from './components/Charts/Charts';
 function App() {
   return (
     <div className="App">
-      <nav>
-        <Link to="/table">Table</Link>
-        <Link to="/charts">Charts</Link>
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <Link className="navbar-item" to="/table">Table</Link>
+        <Link className="navbar-item" to="/charts">Charts</Link>
       </nav>
       <Switch>
         <Route path="/table" component={Tables}>

@@ -1,4 +1,4 @@
-import { Line, BarChart, XAxis, Bar, ResponsiveContainer, CartesianGrid, YAxis } from 'recharts';
+import { BarChart, XAxis, Bar, CartesianGrid, YAxis } from 'recharts';
 import initialData from '../../users.json';
 
 
@@ -16,7 +16,6 @@ const getStartingLetters = arr => {
 };
 
 const data = getStartingLetters(initialData);
-console.log(data);
 export default function Charts() {
   return (
     <BarChart width={666} height={666} data={data}>
